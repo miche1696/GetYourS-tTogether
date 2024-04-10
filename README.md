@@ -8,9 +8,9 @@ Main functions:
 
 Whatsapp logging trhough audio.
 
-MVP:
-- Habit Setup and Logging : Easy way to track your progress without much hussle. Limited kind of habits: Running, Training, Quit Smoking, Drink water, Walking.
-- Simple UX with text area. --> Is it convenient to do it through a whatsapp/telegram chat?
+MVP - DONE:
+- Habit Setup and Logging - DONE: Easy way to track your progress without much hussle. Limited kind of habits: Running, Training, Quit Smoking, Drink water, Walking.
+- Simple UX with text area. - DONE --> Is it convenient to do it through a whatsapp/telegram chat?
 MVPv2:
 - Virtual assistant: It supports the habit tracking, enabling the or setup of the habit and logging.
 - Results/Tracking Calendar and Dashboard. 
