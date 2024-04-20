@@ -1,0 +1,49 @@
+Frontend Changes
+Login and Registration Views
+Login View (frontend/src/views/LoginView.js):
+Create a form with inputs for username and password.
+Add a "Login" button that triggers an authentication request to the backend.
+Registration View (frontend/src/views/RegisterView.js):
+Create a new file for the registration view, if it doesn't exist.
+Include inputs for the new username and password.
+Add a "Register" button that sends the registration data to the backend.
+Application Menu View
+Menu View (frontend/src/views/MenuView.js):
+Display menu options: "Insert new habit", "Log habit occurrence", "Show my habits", "Show calendar of my past and future habits".
+Each option is a link or a button that navigates to the corresponding view or component.
+Habit Insertion View
+3.1. Habit Insertion View (frontend/src/views/HabitInsertionView.js):
+
+Create a form with text inputs for the habit's name and occurrences per week.
+Add a "Submit" button to send the habit data to the backend.
+Habit Logging View
+3.2. Habit Logging View (frontend/src/views/HabitLoggingView.js):
+
+Retrieve the list of user's habits from the backend and populate a dropdown list.
+Include a "Submit" button to log the selected habit's occurrence in the backend.
+Habit Listing View
+3.3. Habit Listing View (frontend/src/views/HabitListingView.js):
+
+Fetch and display the user's habits with name, occurrences per week, total logged events, and last occurrence date/time.
+Include a "bin" icon next to each habit that allows the user to delete the habit via a request to the backend.
+Habit Calendar View
+3.4. Habit Calendar View (frontend/src/views/HabitCalendarView.js):
+
+Implement or integrate a calendar component.
+Fetch habit occurrences as a vector of dates from the backend and display them on the calendar.
+Backend Changes
+Authentication and Registration
+Implement API endpoints for login (POST /api/login) and registration (POST /api/register).
+Use authentication middleware to protect routes that require a logged-in user.
+Habit Management
+Create database models for User, Habit, and HabitOccurrence.
+Implement API endpoints for habit CRUD operations:
+POST /api/habits to create a new habit.
+GET /api/habits to list a user's habits.
+POST /api/habits/{habitId}/occurrences to log a habit occurrence.
+DELETE /api/habits/{habitId} to delete a habit.
+Calendar Data Generation
+Develop a function to generate calendar data based on habit occurrences and future habit planning.
+Routing
+Update the frontend/src/routes.js to include paths to the new views.
+Remember to ensure that all personal data and operations are secured, using appropriate authentication, authorization, and validation both on the frontend and backend. You will also need to handle state management on the frontend to keep track of the logged-in user and their data.

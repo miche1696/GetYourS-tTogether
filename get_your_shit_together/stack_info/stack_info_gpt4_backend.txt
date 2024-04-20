@@ -1,0 +1,22 @@
+backend/
+├── models/
+│   ├── UserModel.js
+│   └── HabitModel.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── habitRoutes.js
+│   └── userRoutes.js
+├── controllers/
+│   ├── authController.js
+│   ├── habitController.js
+│   └── userController.js
+├── middleware/
+│   ├── authMiddleware.js
+│   ├── errorMiddleware.js
+│   └── validationMiddleware.js
+├── utils/
+│   ├── tokenUtils.js
+│   └── dbUtils.js
+├── app.js
+├── server.js
+└── package.json

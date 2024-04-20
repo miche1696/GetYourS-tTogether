@@ -1,0 +1,38 @@
+frontend/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── Button.js
+│   │   ├── InputField.js
+│   │   ├── HabitCard.js
+│   │   ├── Navbar.js
+│   │   └── Notification.js
+│   ├── views/
+│   │   ├── LoginView.js
+│   │   ├── DashboardView.js
+│   │   ├── HabitTrackerView.js
+│   │   └── ProfileView.js
+│   ├── state/
+│   │   ├── actions/
+│   │   │   ├── authActions.js
+│   │   │   └── habitActions.js
+│   │   ├── reducers/
+│   │   │   ├── authReducer.js
+│   │   │   └── habitReducer.js
+│   │   └── store.js
+│   ├── utilities/
+│   │   ├── constants.js
+│   │   ├── utils.js
+│   │   └── validation.js
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── habitService.js
+│   │   └── api.js
+│   ├── App.js
+│   ├── index.js
+│   └── routes.js
+├── .babelrc
+├── webpack.config.js
+└── package.json
